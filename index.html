@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mexaly - AI-Native Business Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                Mexaly
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-auth">
+                <button class="btn-login" onclick="showLogin()">Login</button>
+                <button class="cta-button" onclick="showSignup()">Start Free Trial</button>
+            </div>
+            <div class="mobile-menu-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>AI-Native Business Platform</span>
+                </div>
+                <h1 class="hero-title">
+                    Transform Your Business with 
+                    <span class="highlight">AI-Native</span> 
+                    Intelligence
+                </h1>
+                <p class="hero-description">
+                    Mexaly empowers modern organizations with intelligent automation, predictive insights, and seamless integrations. Experience the future of business operations today.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="showSignup()">
+                        <span>Get Started Free</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn-secondary" onclick="playDemo()">
+                        <span class="play-icon">▶</span>
+                        <span>Watch Demo</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Companies Trust Us</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime SLA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">70%</span>
+                        <span class="stat-label">Faster Deployment</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <div class="mockup-title">Mexaly Dashboard</div>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">🧠</div>
+                            <div class="card-title">AI Insights</div>
+                            <div class="card-metric">+24%</div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">⚡</div>
+                            <div class="card-title">Automation</div>
+                            <div class="card-metric">98.5%</div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-icon">📊</div>
+                            <div class="card-title">Analytics</div>
+                            <div class="card-metric">Real-time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Revolutionary Capabilities</span>
+                </div>
+                <h2 class="section-title">Powerful Features That Drive Results</h2>
+                <p class="section-subtitle">
+                    Discover how Mexaly's AI-native architecture transforms traditional business operations into intelligent, automated workflows
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>🧠</span>
+                    </div>
+                    <h3 class="feature-title">AI-Powered Intelligence</h3>
+                    <p class="feature-description">
+                        Built-in machine learning delivers predictive analytics, anomaly detection, and intelligent recommendations that evolve with your business.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>⚡</span>
+                    </div>
+                    <h3 class="feature-title">No-Code Automation</h3>
+                    <p class="feature-description">
+                        Create sophisticated workflows visually without writing code. Our intuitive drag-and-drop builder empowers every team member.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>🔒</span>
+                    </div>
+                    <h3 class="feature-title">Enterprise Security</h3>
+                    <p class="feature-description">
+                        Advanced threat protection, compliance management, and immutable audit trails keep your data secure and compliant.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>🔌</span>
+                    </div>
+                    <h3 class="feature-title">Seamless Integration</h3>
+                    <p class="feature-description">
+                        Connect with 500+ tools through REST and GraphQL APIs. Integrate with SAP, Salesforce, Microsoft 365, and more.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>📊</span>
+                    </div>
+                    <h3 class="feature-title">Real-time Analytics</h3>
+                    <p class="feature-description">
+                        Natural language reporting and custom dashboards provide instant insights. Ask questions in plain English and get answers.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-tilt>
+                    <div class="feature-icon">
+                        <div class="icon-bg"></div>
+                        <span>🌐</span>
+                    </div>
+                    <h3 class="feature-title">Cloud-Native Architecture</h3>
+                    <p class="feature-description">
+                        Microservices-based platform with continuous delivery, zero downtime updates, and flexible deployment options.
+                    </p>
+                    <div class="feature-link">
+                        <span>Learn more</span>
+                        <span class="arrow">→</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <div class="solutions-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">🎯</span>
+                    <span>Industry Solutions</span>
+                </div>
+                <h2 class="section-title">Tailored for Your Industry</h2>
+                <p class="section-subtitle">
+                    Mexaly adapts to your specific industry needs with pre-built templates and specialized workflows
+                </p>
+            </div>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🏥</div>
+                    <h3>Healthcare</h3>
+                    <p>HIPAA-compliant workflows, patient data management, and automated compliance reporting.</p>
+                    <ul>
+                        <li>Patient workflow automation</li>
+                        <li>Compliance monitoring</li>
+                        <li>Data privacy controls</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">🏭</div>
+                    <h3>Manufacturing</h3>
+                    <p>Supply chain optimization, quality control automation, and predictive maintenance.</p>
+                    <ul>
+                        <li>Supply chain visibility</li>
+                        <li>Quality assurance</li>
+                        <li>Predictive analytics</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">🏦</div>
+                    <h3>Financial Services</h3>
+                    <p>Risk management, fraud detection, and regulatory compliance automation.</p>
+                    <ul>
+                        <li>Risk assessment</li>
+                        <li>Fraud prevention</li>
+                        <li>Regulatory reporting</li>
+                    </ul>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">🛒</div>
+                    <h3>Retail & E-commerce</h3>
+                    <p>Inventory management, customer journey optimization, and demand forecasting.</p>
+                    <ul>
+                        <li>Inventory optimization</li>
+                        <li>Customer analytics</li>
+                        <li>Demand planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="comparison-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">⚖️</span>
+                    <span>Why Choose Mexaly</span>
+                </div>
+                <h2 class="section-title">Mexaly vs Traditional ERP</h2>
+                <p class="section-subtitle">
+                    See how Mexaly outperforms traditional ERP systems in every aspect
+                </p>
+            </div>
+
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="comparison-feature">Feature</div>
+                    <div class="comparison-mexaly">Mexaly</div>
+                    <div class="comparison-traditional">Traditional ERP</div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <strong>Architecture</strong>
+                    </div>
+                    <div class="comparison-mexaly">
+                        <span class="check">✓</span>
+                        Microservices, cloud-native
+                    </div>
+                    <div class="comparison-traditional">
+                        <span class="cross">✗</span>
+                        Monolithic or hybrid
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <strong>Customization</strong>
+                    </div>
+                    <div class="comparison-mexaly">
+                        <span class="check">✓</span>
+                        No-code/low-code builder
+                    </div>
+                    <div class="comparison-traditional">
+                        <span class="cross">✗</span>
+                        Heavy developer dependency
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <strong>AI & Automation</strong>
+                    </div>
+                    <div class="comparison-mexaly">
+                        <span class="check">✓</span>
+                        Built-in AI/ML capabilities
+                    </div>
+                    <div class="comparison-traditional">
+                        <span class="cross">✗</span>
+                        Often add-ons or third-party
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <strong>Time-to-Value</strong>
+                    </div>
+                    <div class="comparison-mexaly">
+                        <span class="check">✓</span>
+                        Weeks to deploy
+                    </div>
+                    <div class="comparison-traditional">
+                        <span class="cross">✗</span>
+                        Months/years for customization
+                    </div>
+                </div>
+
+                <div class="comparison-row">
+                    <div class="comparison-feature">
+                        <strong>Pricing Model</strong>
+                    </div>
+                    <div class="comparison-mexaly">
+                        <span class="check">✓</span>
+                        Modular, pay-as-you-grow
+                    </div>
+                    <div class="comparison-traditional">
+                        <span class="cross">✗</span>
+                        Costly, rigid licensing
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">💬</span>
+                    <span>Customer Success</span>
+                </div>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">
+                    Real results from real customers who transformed their business with Mexaly
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            "With Mexaly, we cut our onboarding time by over 70% and finally gained real-time visibility into our operations. The AI insights have been game-changing for our decision-making process."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JS</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Jane Smith</div>
+                            <div class="author-title">Professional Services Leader</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            "The decision intelligence layer helped us detect an invoicing anomaly worth over $12,000. That alone paid for the system. The ROI has been incredible."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>MJ</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-title">CFO, Healthcare Organization</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text">
+                            "Our supply chain workflow that took weeks to coordinate is now fully automated thanks to Mexaly's visual process builder. It's like having a digital operations expert."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>SD</span>
+                        </div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Davis</div>
+                            <div class="author-title">Operations Director, Manufacturing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span class="badge-icon">💰</span>
+                    <span>Simple Pricing</span>
+                </div>
+                <h2 class="section-title">Choose Your Plan</h2>
+                <p class="section-subtitle">
+                    Flexible pricing that grows with your business. Start free, upgrade when you're ready.
+                </p>
+            </div>
+
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <div class="toggle-switch" id="pricingToggle">
+                    <div class="toggle-slider"></div>
+                </div>
+                <span class="toggle-label">Annual <span class="discount">Save 20%</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="29" data-annual="23">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for small teams getting started</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Up to 5 users</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Basic automation workflows</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Standard integrations</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Email support</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="showSignup('starter')">Get Started</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="99" data-annual="79">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Ideal for growing businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Up to 25 users</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Advanced AI automation</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>All integrations</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Priority support</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Custom dashboards</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button primary" onclick="showSignup('professional')">Start Free Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="299" data-annual="239">299</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For large organizations</p>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Unlimited users</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Enterprise security</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>Custom integrations</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>24/7 dedicated support</span>
+                        </div>
+                        <div class="feature">
+                            <span class="check">✓</span>
+                            <span>On-premise deployment</span>
+                        </div>
+                    </div>
+                    <button class="pricing-button" onclick="contactSales()">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Transform Your Business?</h2>
+                <p class="cta-description">
+                    Join forward-thinking organizations who trust Mexaly to drive their digital transformation. Start your free trial today.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn-primary large" onclick="showSignup()">
+                        <span>Start Free Trial</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn-secondary large" onclick="scheduleDemo()">
+                        <span>Schedule Demo</span>
+                    </button>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <span class="check">✓</span>
+                        <span>14-day free trial</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="check">✓</span>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="check">✓</span>
+                        <span>Setup in minutes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        Mexaly
+                    </div>
+                    <p class="footer-description">
+                        AI-native business solutions platform that empowers organizations to transform, automate, and thrive in the digital age.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📘</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h3>Product</h3>
+                        <a href="#">Features</a>
+                        <a href="#">Integrations</a>
+                        <a href="#">Security</a>
+                        <a href="#">API</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Solutions</h3>
+                        <a href="#">Process Automation</a>
+                        <a href="#">Business Intelligence</a>
+                        <a href="#">Enterprise Security</a>
+                        <a href="#">Custom Workflows</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Resources</h3>
+                        <a href="#">Documentation</a>
+                        <a href="#">API Reference</a>
+                        <a href="#">Community</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Help Center</a>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Company</h3>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Support</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mexaly. All rights reserved.</p>
+                <p class="footer-tagline">Transform. Automate. Thrive.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Auth Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+        <!-- Login Modal -->
+        <div class="auth-modal" id="loginModal">
+            <div class="modal-header">
+                <h2>Welcome Back</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <form class="auth-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="auth-button">Sign In</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="social-auth google">
+                    <span class="social-icon">G</span>
+                    Continue with Google
+                </button>
+                <button type="button" class="social-auth microsoft">
+                    <span class="social-icon">M</span>
+                    Continue with Microsoft
+                </button>
+                <p class="auth-switch">
+                    Don't have an account? 
+                    <a href="#" onclick="switchToSignup()">Sign up</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Signup Modal -->
+        <div class="auth-modal" id="signupModal">
+            <div class="modal-header">
+                <h2>Start Your Free Trial</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <form class="auth-form" id="signupForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail">Work Email</label>
+                    <input type="email" id="signupEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </label>
+                </div>
+                <button type="submit" class="auth-button">Start Free Trial</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="social-auth google">
+                    <span class="social-icon">G</span>
+                    Continue with Google
+                </button>
+                <button type="button" class="social-auth microsoft">
+                    <span class="social-icon">M</span>
+                    Continue with Microsoft
+                </button>
+                <p class="auth-switch">
+                    Already have an account? 
+                    <a href="#" onclick="switchToLogin()">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
